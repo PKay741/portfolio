@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+.profile-pic img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.intro {
+    text-align: right;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+}
+
+.hire-btn {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.services {
+    padding: 4em 0;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2em;
+}
+
+.service-cards {
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #282846;
+    padding: 2em;
+    border-radius: 10px;
+    width: 23%;
+    text-align: center;
+}
+
+.service-card h3 {
+    color: #6a0dad;
+    font-size: 1.5rem;
+}
+
+.experience-education {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 0;
+}
+
+.experience, .education {
+    width: 45%;
+}
+
+.skills {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 2em;
+    font-size: 2rem;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 100px;
+    text-align: center;
+}
+
+.skill img {
+    width: 50px;
+    margin-bottom: 1em;
+}
+
+.contact {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.contact-btn {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #282846;
+    color: #aaa;
+}
