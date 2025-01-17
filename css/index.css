@@ -456,12 +456,15 @@ body {
     body {
         padding: 15px;
         flex-direction: column;
+        padding-left: 150px; 
+        /* justify-content: space-between; */
     }
 
     .container {
-        padding: 0;
+        /* padding: 10; */
         max-width: 100%;
         height: auto;
+        /* padding-left: 70px; */
     }
 
     .header /*.top-fifth*/ {
@@ -553,7 +556,7 @@ body {
     }
 
     .download {
-        max-width: 40%;
+        max-width: 50%;
         /* justify-content: center; */
         align-content: center;
         height: 10%;
