@@ -679,6 +679,11 @@ body {
     padding: 20px;
   }
  
+  .main{
+    font-size: smaller;
+    font-weight: bold;
+
+}
  
   .skills-body{
     justify-content: center;
