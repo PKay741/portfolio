@@ -1,25 +1,49 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1e1e2e;
     color: #fff;
-    line-height: 1.6;
+    /* line-height: 1.6; */
+    line-height: 2.0;
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    padding: 20px 40px;
+     padding: 35px 40px;
+    /* gap: 35px; */
+     /* gap: 65px; */
+    /* padding: 20px 40px; */
 }
+
+.container,
+.top-body-profile,
+.profile-pic,
+.top-section,
+.top-blocks {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 
 .container{
     width: 100%;
     max-width: 1200px;
-    height:2040px; 
+    height: auto; /* Remove fixed height */
      margin:0 auto;
+     padding: 20px;
+     /* gap: 30px; */
 
 }
 
@@ -63,6 +87,7 @@ body {
     display: flex;
     /* flex: 1;
     flex-wrap: wrap; */
+    /* gap: 30px; */
 }
 .intro{
     justify-content: center;
@@ -81,8 +106,11 @@ body {
 }
 .job-description{
     /*text-wrap:balance;*/
-    max-width:65%;
-    text-align: justify;
+    /* max-width:65%; */
+    /* text-align: justify; */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    ;
 }
 .download{
     display: flex;
@@ -103,7 +131,7 @@ body {
     margin-bottom: 5px;
 }
 .profile-pic{
-    margin-right:55px;  
+    margin-right:40px;  
     border-radius:10px;
     rotate:6deg; 
     border: 3px solid blueviolet;
@@ -158,17 +186,49 @@ body {
     gap:20px;
 }
 .top-section{
+    /* justify-content: space-between;
+    gap:15px; */
     display: flex;
-    justify-content: space-between;
-    gap:15px;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .top-blocks{
     border: 4px solid blueviolet;
-    border-radius: 15px;
-    padding-left: 10px;
-    width: 400px;
+    /* border-radius: 15px; */
+    /* padding-left: 10px; */
+    /* width: 400px; */
+    /* border: 1px solid #333; */
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    flex: 1 1 300px; /* allows responsive wrapping */
+    /* min-width: 280px;
+    max-width: 100%; */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 16px;
+    border: 2px solid #8800ff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+
     
 }
+
+.top-blocks:hover {
+      transform: scale(1.02);
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    a:hover {
+     text-decoration: underline;
+   }
 .services-heading{
     font-weight: bold;
 }
@@ -197,12 +257,14 @@ body {
     display: flex;
     gap:20px;
     justify-content: space-between;
+    /* justify-content: center; */
 }
 .third-left{
     display: flex;
     flex-direction: column;
     width: 48%;
     gap: 15px;
+    /* height: 500px; */
 }
 .third-title{
     font-weight: bold;
@@ -212,9 +274,19 @@ body {
 .present{
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background-color: rgb(82, 11, 148);
-    padding: 20px;
+    /* padding: 20px; */
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 16px;
+    /* border: 2px solid #8800ff; */
+    border-radius: 8px;
+    margin-bottom: 20px;
+
 }
 .l-blocks{
     font-weight: bold;
@@ -230,9 +302,37 @@ body {
 .year-ago{
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background-color: rgb(50, 1, 95);
-    padding: 20px;
+    /* padding: 20px; */
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 16px;
+    /* border: 2px solid #8800ff; */
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+.top-blocks p,
+.top-blocks a,
+.top-blocks span {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.present p,
+.present a,
+.present span {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.year-ago p,
+.year-ago a,
+.year-ago span {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .l-blocks-2{
     font-weight: bold;
@@ -256,12 +356,15 @@ body {
 .skills-title{
     font-size: 37px;
     color: rgb(199, 160, 235);
-    padding-left: 470px;
+    /* padding-left: 470px; */
     font-weight: bold;
+    text-align: center;
 }
 .skills-body{
     justify-content: center;
     text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
     
 }
 .fourth-middle{
@@ -395,6 +498,7 @@ body {
     height:200px;
     font-size: 20px;
     justify-content: space-between;
+    
 }
 .phone-info{
     display: flex;
@@ -452,299 +556,135 @@ body {
     }
 } */
 
-@media (max-width: 1080px) {
-    body {
-        padding: 15px;
-        flex-direction: column;
-        padding-left: 150px; 
-        /* justify-content: space-between; */
-    }
+/* @media (max-width: 1080px) {
+  body {
+    padding: 10px;
+  }
 
-    .container {
-        /* padding: 10; */
-        max-width: 100%;
-        height: auto;
-        /* padding-left: 70px; */
-    }
+  .container {
+    padding: 10px;
+    height: auto; 
+    width: 100%;
+  }
 
-    .header /*.top-fifth*/ {
-        flex-direction: row; 
-        gap: 160px;
-        /* flex-wrap: wrap; */
-        /* display:contents;  */
-        justify-content:left;
-        
-    }
+  .top-body-profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .h-left /*.h-right ul*/ {
-        text-align:left;
-        /* flex-wrap: wrap; */
-    }
-    .h-right{
-        text-align:right;
-        /* flex-wrap: wrap; */
+  .profile-pic {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
+    rotate: 0deg;
+    display: block;
+    max-width: 300px;
+  }
 
-    }
-    .hire-me{
-    /* background-color: rgb(128, 21, 228);
-    border-radius: 15px; */
-    /*border: 1px solid white;*/
-    /* font-weight: bold; */
-    margin-left: 20px; 
-    /* width: 35%; */
+  .job-title,
+  .job-description {
+    max-width: 100%;
     text-align: center;
-    /*flex-wrap: wrap; */
-    width: 40%;
+  }
 
-    }
+  .top-section {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    /* .top-body{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    } */
+  .top-blocks {
+    width: 100%;
+    padding: 15px;
+  }
 
-    .top-body-profile{
-        display: flex;
-         /* flex-direction: column; */
-        flex-wrap: wrap; 
-    }
-    .intro{
-        justify-content: center;
-        max-width: 37%;
-        
-    }
-    /* .intro-name{
-        font-weight: bold;
-        font-size:14px;
-    } */
+  .about-section {
+    padding: 20px 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .education-section,
+  .contact-section {
+    padding: 20px 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .job-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .job-title h3 {
+    font-size: 1rem;
+  }
+
+  .job-description p {
+    font-size: 0.95rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 30px;
+  }
+} */
+
+@media (max-width: 1080px) {
+  .top-section {
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: stretch;
+  }
+
+  .job-description{
+   text-align: justify;
     
-    /* .job-title{
-        color: rgb(126, 16, 230);
-        font-weight: bold;
-        font-size: 45px;
-        max-width: 45%;
-    } */
-    /* .job-description{
-        text-wrap:wrap; 
-        max-width:30%; 
-        text-align: justify; 
-    } */
-    /* .download{
-        display: flex;
-        background-color: blueviolet;
-        border-radius: 15px;
-        max-width: 20%;
-        padding: 2px; */
-        /* justify-content: center;
-    } */
-    .download-text{
-        /* margin-left:15px;
-        margin-top:3px; */
-        font-weight: bold;
-        /* display: flex; */
-    }
+}
 
-    .job-title {
-        font-size: 32px;
-        max-width: 100%;
-    }
+  .top-blocks {
+    width: 100%;
+  }
 
-    .job-description {
-        max-width: 100%;
-        font-size: 14px;
-    }
+  .top-body-profile {
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: stretch;
+    text-align: center;
+  }
 
-    .download {
-        max-width: 50%;
-        /* justify-content: center; */
-        align-content: center;
-        height: 10%;
-    }
-    .profile-pic{
-        /* margin-right:55px;   */
-        /* border-radius:10px;
-        rotate:6deg;  */
-        /* border: 3px solid blueviolet; */
-        width: 20%;
-        height: 20%;
-        margin-left:50px ;
-    }
-    .top-footer{
-        /* display: flex;
-         justify-content:center; */
-        /* color: rgb(136, 31, 235); */
-        /* flex-wrap: wrap;  */
-        /* flex-direction: row;  */
-        /* gap: 20px;
-        display: contents; */
-        flex-direction: row; 
-        gap: 30px;
-        /* flex-wrap: wrap; */
-        /* display:contents;  */
-        justify-content:left;
-        
-    }
+  .profile-pic {
+    max-width: 100%;
+    height: auto;
+    transform: none;
+    rotate: 0deg;
+    /* align-self: center; */
+  }
 
-    /* .top-footer, .third-fifth, .bottom-fifth {
-        flex-direction: column;
-        gap: 20px;
-    } */
-
-    /* .second-fifth{
-        
-    } */
-
-    .services-title{
-        margin-right: 350px;
+  body {
+    padding: 20px;
+  }
+ 
+ 
+  .skills-body{
+    justify-content: center;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
     
-    }
-
-    .top-section{
-        flex-direction: column;
-        margin-right: 200px;
-        
-    }
-
-    .top-blocks{
-        width: 80%;
-    }
-    .bottom-section{
-        flex-direction: column;
-        margin-right: 200px;
-    }
-
-    .third-fifth{
-        flex-direction: column;
-        
-        
-    }
-
-    .third-title{
-        align-self: center;
-        margin-left: 180px;
-    }
-    /* .third-left, .third-right {
-        width: 50%;
-    } */
-    .present{
-        /* display: contents; */
-        margin-left: 100px;
-        width: 100%;
-
-    }
-    .year-ago{
-        margin-left: 100px;
-        width: 100%;
-
-
-    }
-    .fourth-top{
-        flex-wrap: wrap;
-    }
-
-    .skills-title {
-        padding-left: 0;
-        /* text-align:center; */
-        margin-left: 250px;
-    }
-    .skills-body{
-        /* display: contents;  */
-        /* text-wrap: wrap;  */
-        /* max-width: 70%; */
-        margin-right: 350px;
-    }
-
-    .fourth-middle{
-        /*display: flex;*/
-        /* flex-wrap:wrap; */
-        gap: 30px;
-        justify-content: left;
-        margin-left: 15px;
-        
-        /* object-fit:scale-down; */
-        /* margin-right: auto; */
-        
-        
-    }
-    .figmaimg{
-        width: 40px;
-        height:40px;
-    }
-    .sketchimg{
-        width: 40px;
-        height:40px;
-        
-    }
-    .adobeimg{
-        width: 40px;
-        height:40px; 
-    }
-    .wordpressimg{
-        width: 40px;
-        height:40px;
-    
-    }
-    .reactimg{
-        width: 40px;
-        height:40px;
-    }
-    .javaimg{
-        width: 40px;
-        height:40px; 
-    }
-
-    .fourth-bottom{
-        /* display: contents; */
-        justify-content: left;
-        gap: 42px;
-    }
-    .logos{
-         width: 85px;
-         height: 85px;
-         
-    } 
-    .percentage{
-        font-size: 15px;
-    }
-    .bottom-fifth{
-        max-width: 69%;
-        margin-top: 25px;
-        gap: 65px;  
-         justify-content: space-between;
-    }
-
-    .b-fifth-left {
-        width:45%; 
-        height: auto;
-        margin-top: 99px;
-    }
-    .b-fifth-right {
-        /* width: 100%; */
-        height: auto;
-        margin-left: 10px;
-        margin-bottom: 30px; 
-    }
-
-    /* .form-box, .message-box {
-        width: 100%;
-    } */
-
-    .submit {
-        width: 60%;
-    }
-
-    .services-title, .work-together {
-        font-size: 28px;
-    }
-
-    /* Reduce spacing and margins */
-    .name, .contact {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .phone-info, .mail-info, .location {
-        flex-direction: row;
-    }
+}
 }
