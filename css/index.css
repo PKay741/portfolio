@@ -676,7 +676,7 @@ body {
     /* align-self: center; */
   }
 
-  body {
+   body {
     padding: 20px;
   }
  
@@ -685,12 +685,12 @@ body {
     font-weight: bold;
 
 }
-.l-bottom{
-   font-size: smaller;
-}
-.left-bottom{
+ .l-bottom{
     font-size: smaller;
-}
+ }
+ .left-bottom{
+    font-size: smaller;
+ }
  
   .skills-body{
     justify-content: center;
@@ -699,4 +699,28 @@ body {
     overflow-wrap: break-word;
     
 }
+ .number{
+  font-size: smaller;
+ }
+ .mail{
+  font-size: smaller;
+ }
+ .area{
+  font-size: smaller;
+ }
+ .phone{
+    height: 15px;
+    width: 15px;
+    
+ }
+ .mail-img{
+    height: 15px;
+    width: 15px;
+    
+ }
+ .loc{
+    height: 15px;
+    width: 15px;
+    
+ }
 }
