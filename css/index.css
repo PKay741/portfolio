@@ -503,6 +503,7 @@ body {
 .phone-info{
     display: flex;
     gap:15px;
+   
 }
 /*.phone{
     border-radius: 30px;
@@ -683,6 +684,12 @@ body {
     font-size: smaller;
     font-weight: bold;
 
+}
+.l-bottom{
+   font-size: smaller;
+}
+.left-bottom{
+    font-size: smaller;
 }
  
   .skills-body{
