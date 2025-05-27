@@ -666,17 +666,17 @@ body {
   .job-title{
      max-width: 65%; 
     text-align:left;
-    font-size: 25px;
+    font-size: 30px;
     /* word-break: break-word;
     overflow-wrap: break-word; */
   }
 
   .services-title{
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .skills-title{
-     font-size: 25px;
+     font-size: 30px;
   }
 
   .job-description{
