@@ -664,7 +664,7 @@ body {
   }
    
   .job-title{
-     max-width: 85%; 
+     max-width: 100%; 
     text-align:justify;
     font-size: 20px;
     /* word-break: break-word;
