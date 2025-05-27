@@ -102,14 +102,14 @@ body {
     color: rgb(126, 16, 230);
     font-weight: bold;
     font-size: 45px;
-    max-width: 45%;
+    /* max-width: 50%; */
 }
 .job-description{
-    /*text-wrap:balance;*/
+    text-wrap:balance;
     /* max-width:65%; */
     /* text-align: justify; */
-    word-break: break-word;
-    overflow-wrap: break-word;
+    /* word-break: break-word;
+    overflow-wrap: break-word; */
     ;
 }
 .download{
@@ -249,9 +249,14 @@ body {
     font-weight: bold;
 }
 .bottom-section{
-    display: flex;
-    justify-content: space-between;
-    gap:15px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* gap:15px; */
+     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .third-fifth{
     display: flex;
@@ -652,6 +657,19 @@ body {
     align-items: stretch;
   }
 
+   .bottom-section {
+    flex-direction: row;
+    /* align-items: center; */
+    align-items: stretch;
+  }
+   
+  .job-title{
+     max-width: 65%; 
+    text-align:left;
+    /* word-break: break-word;
+    overflow-wrap: break-word; */
+  }
+
   .job-description{
    text-align: justify;
     
@@ -679,7 +697,7 @@ body {
    body {
     padding: 20px;
   }
- 
+  
   .main{
     font-size: smaller;
     font-weight: bold;
